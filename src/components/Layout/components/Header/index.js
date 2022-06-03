@@ -1,8 +1,9 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCircleXmark, faMagnifyingGlass, faSpinner } from '@fortawesome/free-solid-svg-icons';
+import { faCircleXmark, faMagnifyingGlass, faPlus, faSpinner } from '@fortawesome/free-solid-svg-icons';
 import images from '~/assets/images';
 import styles from './Header.module.scss';
 import classNames from 'classnames/bind';
+import Button from '~/components/Button';
 
 const cx = classNames.bind(styles);
 
@@ -23,7 +24,12 @@ function Header() {
                         <FontAwesomeIcon icon={faMagnifyingGlass} />
                     </button>
                 </div>
-                <div className={cx('actions')}></div>
+                <div className={cx('actions')}>
+                <div className={cx('actions')}>
+                    <Button text leftIcon={ <FontAwesomeIcon icon={faPlus} />}>Upload</Button>
+                    <Button primary>Log in</Button>
+                </div>
+                </div>
             </div>
         </header>
     );
