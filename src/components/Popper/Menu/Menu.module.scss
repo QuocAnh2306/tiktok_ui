@@ -1,0 +1,16 @@
+.menu-list {
+    width: 250px;
+
+    .menu-item {
+        display: inline-flex;
+        padding: 11px 16px;
+        justify-content: flex-start;
+        width: 100%;
+        margin-left: 0;
+        font-weight: 600;
+        &:hover {
+            border-radius: 0;
+            background-color: rgba(22, 24, 35, 0.03);
+        }
+    }
+}
